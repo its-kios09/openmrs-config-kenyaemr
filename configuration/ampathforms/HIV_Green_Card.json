@@ -179,6 +179,10 @@
                     ]
                   },
                   {
+                    "label": "People who use drugs (PWUD)",
+                    "concept": "160666AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
                     "concept": "159674AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Fisher folk",
                     "conceptMappings": [
@@ -314,6 +318,10 @@
                     ]
                   },
                   {
+                    "label": "People who use drugs (PWUD)",
+                    "concept": "160666AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
                     "concept": "159674AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Fisher folk",
                     "conceptMappings": [
@@ -354,6 +362,10 @@
                         "value": "160578"
                       }
                     ]
+                  },
+                  {
+                    "label": "Male Sex Worker",
+                    "concept": "973e5b6c-ae5e-4d6a-a624-2d259763771f"
                   },
                   {
                     "concept": "6096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -686,7 +698,6 @@
                         "concept": "141597AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                         "label": "Sleep Disturbance"
                       },
-                    
                       {
                         "concept": "125225AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                         "label": "Pain when Swallowing"
@@ -1950,7 +1961,6 @@
                 }
               ]
             }
-           
           ]
         },
         {
@@ -2954,57 +2964,57 @@
                   {
                     "concept": "136443AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Jaundice",
-                    "disableWhenExpression":"myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   {
                     "concept": "460AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Oedema",
-                    "disableWhenExpression":"myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   {
                     "concept": "5334AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Oral thrush",
-                    "disableWhenExpression":"myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   {
                     "concept": "5245AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Pallor",
-                    "disableWhenExpression":"myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   {
                     "concept": "140125AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Finger Clubbing",
-                    "disableWhenExpression":"myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   {
                     "concept": "126952AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Lymph Node Axillary",
-                    "disableWhenExpression":"myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   {
                     "concept": "143050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Cyanosis",
-                    "disableWhenExpression":"myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   {
                     "concept": "126939AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Lymph Nodes Inguinal",
-                    "disableWhenExpression":"myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   {
                     "concept": "823AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Wasting",
-                    "disableWhenExpression":"myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   {
                     "concept": "142630AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Dehydration",
-                    "disableWhenExpression":"myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   },
                   {
                     "concept": "116334AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Lethargic",
-                    "disableWhenExpression":"myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 ]
               },
