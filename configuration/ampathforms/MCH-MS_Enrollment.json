@@ -6,12 +6,12 @@
   "uuid": "90a18f0c-17cd-4eec-8204-5af52e8d77cf",
   "retired": false,
   "encounter": "MCH Mother Enrollment",
-	"meta": {
-		"programs": {
-			"uuid": "b5d9e05f-f5ab-4612-98dd-adb75438ed34",
-			"isEnrollment": true,
-			"discontinuationDateQuestionId": ""
-		}
+  "meta": {
+    "programs": {
+      "uuid": "b5d9e05f-f5ab-4612-98dd-adb75438ed34",
+      "isEnrollment": true,
+      "discontinuationDateQuestionId": ""
+    }
   },
   "pages": [
     {
@@ -85,11 +85,12 @@
               "label": "ANC No:",
               "type": "obs",
               "questionOptions": {
-                "rendering": "number",
+                "rendering": "text",
                 "concept": "163530AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
               "id": "ancNumber",
               "min": "0",
+              "max": "99",
               "validators": [
                 {
                   "type": "js_expression",
@@ -105,7 +106,9 @@
               "required": "true",
               "questionOptions": {
                 "concept": "160080AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
+                "rendering": "number",
+                "min": "0",
+                "max": "50"
               }
             },
             {
@@ -115,7 +118,9 @@
               "required": "true",
               "questionOptions": {
                 "concept": "1823AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "number"
+                "rendering": "number",
+                "min": "0",
+                "max": "50"
               }
             },
             {
@@ -135,7 +140,7 @@
               "type": "obs",
               "id": "ultrasoundEdd",
               "questionOptions": {
-                "concept": "5596AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "5599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "date"
               },
               "validators": [
@@ -198,15 +203,19 @@
               "id": "lmpDate",
               "validators": [
                 {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                },
+                {
                   "type": "js_expression",
                   "failsWhenExpression": "isEmpty(lmpDate) && serviceType == '1622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
                   "message": "If service type is ANC. Please provide LMP Date."
                 },
                 {
-									"type": "js_expression",
-									"failsWhenExpression": "!isEmpty(myValue) && moment(myValue).isBefore(moment(birthdate), 'day')",
-									"message": "LMP date should not be before the date of birth."
-								}
+                  "type": "js_expression",
+                  "failsWhenExpression": "!isEmpty(myValue) && moment(myValue).isBefore(moment(birthdate), 'day')",
+                  "message": "LMP date should not be before the date of birth."
+                }
               ]
             },
             {
@@ -215,7 +224,7 @@
               "id": "estimatedLmp",
               "questionOptions": {
                 "concept": "162095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "select",
+                "rendering": "radio",
                 "answers": [
                   {
                     "concept": "true",
@@ -226,7 +235,13 @@
                     "label": "No"
                   }
                 ]
-              }
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
             },
             {
               "label": "Gestational age:",
@@ -286,7 +301,7 @@
                 "rendering": "select",
                 "concept": "159427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "answers": [
-									{
+                  {
                     "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Known Positive"
                   },
@@ -947,5 +962,6 @@
     }
   ],
   "processor": "EncounterFormProcessor",
-  "referencedForms": []
+  "referencedForms": [],
+  "encounterType": "3ee036d8-7c13-4393-b5d6-036f2fe45126"
 }
