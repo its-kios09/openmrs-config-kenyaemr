@@ -59,7 +59,8 @@ rename_dist_folder() {
 
 # Handle renaming for openmrs-esm-form-entry-app-*
 rename_dist_folder "openmrs-esm-form-entry-app-*" "dist-form-entry"
-#rename_dist_folder "openmrs-esm-stock-management-app-*" "dist-stock"
+rename_dist_folder "kenyaemr-esm-patient-registration-app-*" "dist-registration"
+rename_dist_folder "kenyaemr-esm-billing-app-*" "dist-billing"
 
 
 # Exit with success status

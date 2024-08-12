@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunk_kenyaemr_esm_billing_app=globalThis.webpackChunk_kenyaemr_esm_billing_app||[]).push([[303,152],{2303:(e,a,l)=>{l.r(a),l.d(a,{default:()=>r,immutable:()=>t});var i=l(3255),n=l(3325);const t=e=>(a,l,i)=>(i.revalidateOnFocus=!1,i.revalidateIfStale=!1,i.revalidateOnReconnect=!1,e(a,l,i)),r=(0,n.withMiddleware)(i.ZP,t)}}]);
