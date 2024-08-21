@@ -519,11 +519,6 @@
         "biometricDisplayed": "Anthropometrics displayed",
         "biometrics": "Anthropometrics"
       }
-    },
-    "Display conditions": {
-      "privileges": [
-        "o3: View Vitals and Biometrics"
-      ]
     }
   },
   "@kenyaemr/esm-service-queues-app": {
